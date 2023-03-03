@@ -1,0 +1,49 @@
+*{
+    margin: 5px;
+   
+}
+dd{
+    font-size: smaller;
+    font-size: 20px;
+}
+dt{
+    font-weight: 700;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+#card{
+padding: 4px;
+ background-image: url("https://images.unsplash.com/photo-1567807951157-76af61943dfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80");
+object-fit: cover;
+border-radius: 10px;
+}
+.buttons{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    padding: 10px;
+    background-color: #1b0473;
+    color: #fff;
+    margin-right: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    box-shadow: 0 3px rgb(255, 255, 255);
+    outline: none;
+    font-size: 18px;
+    
+}
+.button:hover {
+    background-color: #000400;
+   color: #fff;
+}
+
+.button:active {
+  background-color: #ffffff;
+  box-shadow: 0 5px rgb(4, 0, 0);
+  transform: translateY(4px);
+  color: black;
+}
