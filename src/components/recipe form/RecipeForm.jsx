@@ -1,40 +1,58 @@
 import React from 'react'
 import { useState } from 'react';
 import"./form.css"
+import {  useNavigate } from "react-router-dom";
 const RecipeForm = () => {
-    // const [formData, setFormData] = useState('');
-    const [name, setName] = useState('');
-    const [description, setDescription] = useState('');
-  
-    const handleSubmit = async (event) => {
-      event.preventDefault();
-      //const response = await axios.post('/api/recipes', { name, description });
-      console.log();
-    };
+  const navigate=useNavigate();
+  const[formData,setFormData]=useState({
+    name:"", instructions:"", description:""
+})
+const handleSubmit=(event)=>{
+  event.preventDefault();
+  postData(formData)
+ }  
+const postData=(data)=>{
+  fetch("http://localhost:9292/recipe",{
+    method:"POST",
+    headers: {
+        "Content-Type": "application/json", 
+        "Accept": "application/json",
+     },
+     body:JSON.stringify(data)
+  }) .then((response)=>response.json())
+  .then(data=>console.log(data))
+  setTimeout(() => navigate('/recipe'), 100); 
+}
+const handleOnChange = (event)=> {
+  const fieldName=event.target.name;
+  const fieldValue= event.target.value
+  const newFormData={...formData};
+  newFormData[fieldName]=fieldValue;
+  setFormData(newFormData);
+}
   return (
     <div className='formdiv'>
-    <form className='form'
-    onSubmit={handleSubmit}>
+    <form className='form' onSubmit={handleSubmit}>
       <label className='lable'>Name:</label>
       <input className='nameinput'
         type="text"
         id="name"
-        value={name}
-        onChange={(event) => setName(event.target.value)}
+        name='name'
+        onChange={handleOnChange}
       />
 
       <label className='lable'>Description:</label>
       <input className='nameinput'
       type="text"
         id="description"
-        value={description}
-        onChange={(event) => setDescription(event.target.value)}
+        name='description'
+        onChange={handleOnChange}
       />
       <label className='lable'>Instructions:</label>
       <textarea className='instructionsinput'
-        id="description"
-        value={description}
-        onChange={(event) => setDescription(event.target.value)}
+        id="instructions"
+        name='instructions'
+        onChange={handleOnChange}
       />
 
       <button className='createrecipe' type="submit">Create Recipe</button>
