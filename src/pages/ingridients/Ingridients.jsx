@@ -13,7 +13,7 @@ const Ingridients = () => {
   return (
    <>
    
-   <div>
+   <div className='row col-12 border border-danger  m-1 '>
     {
       ingridients.map((ingridient)=>{
        return(

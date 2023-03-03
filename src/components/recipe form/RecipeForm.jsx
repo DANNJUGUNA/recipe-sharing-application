@@ -38,6 +38,7 @@ const handleOnChange = (event)=> {
         type="text"
         id="name"
         name='name'
+        placeholder='Recipe name'
         onChange={handleOnChange}
       />
 
@@ -46,12 +47,14 @@ const handleOnChange = (event)=> {
       type="text"
         id="description"
         name='description'
+        placeholder='Description'
         onChange={handleOnChange}
       />
       <label className='lable'>Instructions:</label>
       <textarea className='instructionsinput'
         id="instructions"
         name='instructions'
+        placeholder='Instructions'
         onChange={handleOnChange}
       />
 

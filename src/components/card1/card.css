@@ -1,7 +1,4 @@
-*{
-    margin: 5px;
-   
-}
+
 dd{
     font-size: smaller;
     font-size: 20px;
@@ -16,7 +13,7 @@ dt{
 padding: 4px;
  background-image: url("https://images.unsplash.com/photo-1567807951157-76af61943dfe?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80");
 object-fit: cover;
-border-radius: 10px;
+border-radius: 9px;
 }
 .buttons{
     padding: 20px;

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+
 import"./card.css"
 const Card = ({ingridient,id}) => {
   const[name,setname]=useState("")
@@ -13,8 +13,9 @@ const Card = ({ingridient,id}) => {
     }
   return (
   
-    <div  >
-    <div className='col-6  ' id='card' >
+  
+    <div className="col-3 p-6 m-0 rounded-5 border border-danger mb-2" id='card' >
+       
         <dl>
             <dt>Name</dt>
             <dd>{ingridient.name}</dd>
@@ -32,7 +33,7 @@ const Card = ({ingridient,id}) => {
         
     </div>
     
-    </div>
+  
     
   )
 }

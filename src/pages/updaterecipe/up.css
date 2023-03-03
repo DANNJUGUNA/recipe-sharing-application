@@ -1,0 +1,54 @@
+.formdiv{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    height: 500px;
+    width: 500px;
+    padding: 2px;
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    background-image:url("https://images.unsplash.com/photo-1627907228175-2bf846a303b4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
+    background-size: "cover";
+    
+}
+.lable{
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    font-weight: 600;
+}
+.nameinput{
+    margin: 5px;
+    height: 30px;
+    border-radius: 10px;
+    border: 3px solid black;
+    font-size: 18px;
+    padding-left: 20px;
+    color: #040000;
+}
+.nameinput :focus{
+    outline: none;
+}
+.instructionsinput{
+    height: 100px;
+}
+.createrecipe{
+    height: 40px;
+    width: 75%;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: #1b0473;
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+    align-self: center;
+
+}
