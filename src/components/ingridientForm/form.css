@@ -1,9 +1,8 @@
 .formdiv{
-    align-items: center;
-    justify-content: center;
+   align-items: center;
 }
 .form{
-    height: 500px;
+    height: 450px;
     width: 500px;
     padding: 2px;
     border:2px solid rgb(0, 0, 0);
@@ -24,16 +23,18 @@
     margin: 5px;
     height: 30px;
     border-radius: 10px;
-    border: 3px solid black;
+    border: 2px solid black;
     font-size: 18px;
     padding-left: 20px;
-    color: #040000;
+    color: #ffffff;
 }
 .nameinput :focus{
     outline: none;
 }
 .instructionsinput{
     height: 100px;
+    margin: 5px;
+    border-radius: 15px;
 }
 .createrecipe{
     height: 40px;
@@ -42,7 +43,7 @@
     border-radius: 20px;
     border: none;
     background-color: #1b0473;
-    color: rgb(255, 255, 255);
+    color: #ffff;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 5px;
