@@ -1,6 +1,6 @@
-import React from 'react'
-import { NavLink as Link } from 'react-router-dom'
-import "./topbar.css"
+import React from 'react';
+import {  NavLink as Link } from "react-router-dom";
+import "./topbar.css";
 const TopBar = () => {
   return (
     <div className="topbar">
@@ -14,11 +14,11 @@ const TopBar = () => {
         </div>
         <div className="topbar-right">
             <div className="topbarLinks">
-                <span className="topbarLink" >Home</span>
-                <span className="topbarLink">Recipes</span>
-                <span className="topbarLink" >Add Recipes</span>
-                <span className="topbarLink" >Ingridients</span>
-                <span className="topbarLink" >Add Ingridients</span>
+                <Link id='topbarLink' className="btn btn-outline-light text-black" to="/">Home</Link>
+                <Link id='topbarLink' className="btn btn-outline-light text-black" to="/recipe">Recipes</Link>
+                <Link id='topbarLink' className="btn btn-outline-light text-black" to="/addrecipes">Add Recipes</Link>
+                <Link id='topbarLink' className="btn btn-outline-light text-black" to="/ingridients">Ingridients</Link>
+                <Link id='topbarLink' className="btn btn-outline-light text-black" to="/addingridients">Add Ingridients</Link>
             </div>
             
     </div>
